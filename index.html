@@ -184,6 +184,18 @@
             </a>
           </li>
 
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/arinze-peter-578a6b1b5/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://join.skype.com/invite/HfuVGUMZNaQm" class="social-link">
+              <ion-icon name="logo-skype"></ion-icon>
+            </a>
+          </li>
+
         </ul>
 
       </div>
@@ -656,19 +668,7 @@
     
                 </li>
 
-                <li class="skills-item">
-    
-                  <div class="title-wrapper">
-                    <ion-icon style="color: #ffdb70;" name="disc-outline"></ion-icon><br/>
-                    <h5 class="h5">Tailwind</h5>
-                    <!-- <data value="50">50%</data> -->
-                  </div>
-    
-                  <!-- <div class="skill-progress-bg">
-                    <div class="skill-progress-fill" style="width: 50%;"></div>
-                  </div> -->
-    
-                </li>
+            
 
                 <li class="skills-item">
     
@@ -1118,7 +1118,7 @@
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Web development</button>
+              <button data-filter-btn>Business / Company / Brand Websites</button>
             </li>
 
           </ul>
@@ -1150,7 +1150,7 @@
               </li>
 
               <li class="select-item">
-                <button data-select-item>Web development</button>
+                <button data-select-item>Business / Company / Brand Websites</button>
               </li>
 
             </ul>
@@ -1162,25 +1162,26 @@
 
             <!-- FOR WEB DEVELOPMENT CATEGORY -->
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+            <li class="project-item  active" data-filter-item data-category="business / company / brand websites">
+              <a href="https://niffas-beauty-hub.netlify.app" target="_blank">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                  <img src="./assets/images/project1.jpg" alt="finance" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Finance</h3>
+                <h3 class="project-title">NIFFAS BEAUTY HUB</h3>
+                <p class="project-category">This website was built for a business enterprise named NIFFAS BEAUTY HUB. They offer beauty makeup services and they also sell beauty products online. Their services and products can be booked and ordered via their website. This website was built using HTML, CSS, and Javascript.</p>
 
-                <p class="project-category">Web development</p>
+                <!-- <p class="project-category">Business / Company / Brand Websites</p> -->
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <!-- <li class="project-item  active" data-filter-item data-category="web development">
               <a href="#">
 
                 <figure class="project-img">
@@ -1232,12 +1233,12 @@
                 <p class="project-category">Web development</p>
 
               </a>
-            </li>
+            </li> -->
 
 
             <!-- FOR WEB DESIGN CATEGORY -->
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <!-- <li class="project-item  active" data-filter-item data-category="web design">
               <a href="#">
 
                 <figure class="project-img">
@@ -1289,12 +1290,12 @@
                 <p class="project-category">Web design</p>
 
               </a>
-            </li>
+            </li> -->
 
 
             <!-- FOR APPLICATION CATEGORY -->
 
-            <li class="project-item  active" data-filter-item data-category="applications">
+            <!-- <li class="project-item  active" data-filter-item data-category="applications">
               <a href="#">
 
                 <figure class="project-img">
@@ -1329,7 +1330,7 @@
                 <p class="project-category">Applications</p>
 
               </a>
-            </li>
+            </li> -->
 
             
 
@@ -1557,17 +1558,23 @@
 
           <h3 class="h3 form-title">Drop me a message</h3>
 
-          <form action="#" class="form" data-form>
+          <form action="https://formsubmit.co/8d1c78824530154deba184d45ce3d786 " method="POST" class="form" data-form>
 
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
 
               <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+
+              
             </div>
 
             <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
+            <input type="hidden" name="_captcha" value="false">
+
+            <input type="hidden" name="_next" value="alert('sent')">
+
+            <button class="form-btn" type="submit" data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>
               <span>Send Message</span>
             </button>
